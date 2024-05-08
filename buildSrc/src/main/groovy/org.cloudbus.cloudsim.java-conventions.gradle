@@ -16,7 +16,6 @@ repositories {
 
 group = 'org.cloudbus.cloudsim'
 version = '5.1'
-java.sourceCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications {
@@ -29,3 +28,4 @@ publishing {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+

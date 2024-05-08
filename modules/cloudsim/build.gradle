@@ -21,13 +21,13 @@ dependencies {
     testImplementation('junit:junit:4.13.2')
     testImplementation('org.easymock:easymockclassextension:3.2')
     testImplementation('org.easymock:easymock:4.2')
-    compileOnly 'org.projectlombok:lombok:1.18.22'
-    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
 
 //    errorprone("com.google.errorprone:error_prone_core:2.4.0")
 
-    testCompileOnly 'org.projectlombok:lombok:1.18.22'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
 
 }
 
@@ -37,7 +37,7 @@ javadoc{
 }
 
 jacoco {
-    toolVersion = "0.8.7"
+    toolVersion = "0.8.12"
     reportsDirectory = layout.buildDirectory.dir('customJacocoReportDir')
 }
 
@@ -51,4 +51,8 @@ jacocoTestReport {
 
 java {
 //    withJavadocJar()
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+
 }

@@ -15,11 +15,11 @@ dependencies {
     testImplementation('org.easymock:easymockclassextension:3.2')
     implementation 'io.gatling.uncommons.maths:uncommons-maths:1.2.3'
     implementation 'com.google.guava:guava:31.0.1-jre'
-    compileOnly 'org.projectlombok:lombok:1.18.22'
-    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
 
-    testCompileOnly 'org.projectlombok:lombok:1.18.22'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
     //errorprone("com.google.errorprone:error_prone_core:2.4.0")
 
 }

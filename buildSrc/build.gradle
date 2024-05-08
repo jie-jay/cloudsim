@@ -16,3 +16,11 @@ repositories {
 subprojects {
     tasks.withType(javadoc).all { enabled = false }
 }
+
+java {
+//    withJavadocJar()
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+
+}
